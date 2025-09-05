@@ -15,7 +15,7 @@ public class FizzBuzz {
     }
 
     private static boolean IsMultipleThreeAndFive(int order) {
-        return order % 3 == 0 && order % 5 == 0;
+        return order %  3== 0 && order % 5 == 0;
     }
 
     private static boolean IsMultipleThree(int order) {
