@@ -10,7 +10,11 @@ public class MarsRover {
     public static final String W = "W";
 
     public Direction arc(int x, int y, String direction, String command) {
-        Direction direction1 = new Direction(x, y, direction);
+        Direction latestLocation = new Direction(x, y, direction);
+        return judgeCommand(x, y, direction, command, latestLocation);
+    }
+
+    private static Direction judgeCommand(int x, int y, String direction, String command, Direction direction1) {
         if (command.equals("M")) {
             direction1 = commandM(x, y, direction, direction1);
         } else if (command.equals("L")) {
