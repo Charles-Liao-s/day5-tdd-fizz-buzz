@@ -38,15 +38,15 @@ public class FizzBuzzTest {
         assert word.equals("Fizz");
 
     }
-//    @Test
-//    public void should_return_Buzz_when_input_1(){
-//        int order =1;
-//
-//        FizzBuzz fizzBuzz = new FizzBuzz();
-//
-//        String word = fizzBuzz.countOff(order);
-//
-//        assert word.equals("1");
-//
-//    }
+    @Test
+    public void should_return_Buzz_when_input_5(){
+        int order =5;
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String word = fizzBuzz.countOff(order);
+
+        assert word.equals("Buzz");
+
+    }
 }
