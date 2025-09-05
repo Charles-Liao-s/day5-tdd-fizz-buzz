@@ -9,14 +9,17 @@ public class Direction {
     Direction(int x, int y, String direction) {
         this.x = x;
         this.y = y;
-        this.direction =direction;
+        this.direction = direction;
     }
+
     public int getX() {
         return x;
     }
+
     public int getY() {
         return y;
     }
+
     public String getDirection() {
         return direction;
     }

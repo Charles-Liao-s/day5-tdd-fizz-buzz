@@ -130,4 +130,68 @@ public class MarsRoverTest {
         assert dir.getDirection().equals("S");
 
     }
+
+    @Test
+    public void should_return_0_0_E_when_input_0_0_N_and_command_R() {
+        int x = 0;
+        int y = 0;
+        String direction = "N";
+        String command = "R";
+
+        MarsRover marsRover = new MarsRover();
+
+        Direction dir = marsRover.arc(x, y, direction, command);
+        assert dir.getX() == 0;
+        assert dir.getY() == 0;
+        assert dir.getDirection().equals("E");
+
+    }
+
+    @Test
+    public void should_return_0_0_S_when_input_0_0_E_and_command_R() {
+        int x = 0;
+        int y = 0;
+        String direction = "E";
+        String command = "R";
+
+        MarsRover marsRover = new MarsRover();
+
+        Direction dir = marsRover.arc(x, y, direction, command);
+        assert dir.getX() == 0;
+        assert dir.getY() == 0;
+        assert dir.getDirection().equals("S");
+
+    }
+
+    @Test
+    public void should_return_0_0_W_when_input_0_0_S_and_command_R() {
+        int x = 0;
+        int y = 0;
+        String direction = "S";
+        String command = "R";
+
+        MarsRover marsRover = new MarsRover();
+
+        Direction dir = marsRover.arc(x, y, direction, command);
+        assert dir.getX() == 0;
+        assert dir.getY() == 0;
+        assert dir.getDirection().equals("W");
+
+    }
+
+    @Test
+    public void should_return_0_0_N_when_input_0_0_W_and_command_R() {
+        int x = 0;
+        int y = 0;
+        String direction = "W";
+        String command = "R";
+
+        MarsRover marsRover = new MarsRover();
+
+        Direction dir = marsRover.arc(x, y, direction, command);
+        assert dir.getX() == 0;
+        assert dir.getY() == 0;
+        assert dir.getDirection().equals("N");
+
+    }
 }

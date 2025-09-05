@@ -5,7 +5,7 @@ import java.util.List;
 public class MarsRover {
     public Direction arc(int x, int y, String direction, String command) {
         Direction direction1 = new Direction(x, y, direction);
-        if(command.equals("M")){
+        if (command.equals("M")) {
             switch (direction) {
                 case "N":
                     direction1 = new Direction(x, y + 1, direction);
@@ -20,8 +20,7 @@ public class MarsRover {
                     direction1 = new Direction(x - 1, y, direction);
                     break;
             }
-        }
-        else if(command.equals("L")) {
+        } else if (command.equals("L")) {
             switch (direction) {
                 case "N":
                     direction1 = new Direction(x, y, "W");
@@ -34,6 +33,21 @@ public class MarsRover {
                     break;
                 case "W":
                     direction1 = new Direction(x, y, "S");
+                    break;
+            }
+        } else if (command.equals("R")) {
+            switch (direction) {
+                case "N":
+                    direction1 = new Direction(x, y, "E");
+                    break;
+                case "S":
+                    direction1 = new Direction(x, y, "W");
+                    break;
+                case "E":
+                    direction1 = new Direction(x, y, "S");
+                    break;
+                case "W":
+                    direction1 = new Direction(x, y, "N");
                     break;
             }
         }
