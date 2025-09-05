@@ -15,12 +15,16 @@ public class MarsRover {
     }
 
     private static Direction judgeCommand(int x, int y, String direction, String command, Direction direction1) {
-        if (command.equals("M")) {
-            direction1 = commandM(x, y, direction, direction1);
-        } else if (command.equals("L")) {
-            direction1 = commandL(x, y, direction, direction1);
-        } else if (command.equals("R")) {
-            direction1 = commandR(x, y, direction, direction1);
+        switch (command) {
+            case "M":
+                direction1 = commandM(x, y, direction, direction1);
+                break;
+            case "L":
+                direction1 = commandL(x, y, direction, direction1);
+                break;
+            case "R":
+                direction1 = commandR(x, y, direction, direction1);
+                break;
         }
         return direction1;
     }
