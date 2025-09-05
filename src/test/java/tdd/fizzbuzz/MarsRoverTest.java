@@ -12,7 +12,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 1;
         assert dir.getDirection().equals("N");
@@ -28,7 +28,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 1;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("E");
@@ -44,7 +44,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == -1;
         assert dir.getDirection().equals("S");
@@ -60,7 +60,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == -1;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("W");
@@ -76,7 +76,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("W");
@@ -92,7 +92,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("N");
@@ -108,7 +108,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("E");
@@ -124,7 +124,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("S");
@@ -140,7 +140,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("E");
@@ -156,7 +156,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("S");
@@ -172,7 +172,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("W");
@@ -188,7 +188,7 @@ public class MarsRoverTest {
 
         MarsRover marsRover = new MarsRover();
 
-        Direction dir = marsRover.arc(x, y, direction, command);
+        Location dir = marsRover.arc(x, y, direction, command);
         assert dir.getX() == 0;
         assert dir.getY() == 0;
         assert dir.getDirection().equals("N");

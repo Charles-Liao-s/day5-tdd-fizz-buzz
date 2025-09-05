@@ -1,12 +1,12 @@
 package tdd.fizzbuzz;
 
 
-public class Direction {
+public class Location {
     private final int x;
     private final int y;
     private final String direction;
 
-    Direction(int x, int y, String direction) {
+    Location(int x, int y, String direction) {
         this.x = x;
         this.y = y;
         this.direction = direction;
