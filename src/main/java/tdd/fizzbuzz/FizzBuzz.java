@@ -1,18 +1,28 @@
 package tdd.fizzbuzz;
 
-import java.util.*;
-
 public class FizzBuzz {
     public String countOff(int order) {
-        if (order % 3 == 0 && order % 5 == 0) {
+        if (IsMultipleThreeAndFive(order)) {
             return "FizzBuzz";
         }
-        if (order % 3 == 0) {
+        if (IsMultipleThree(order)) {
             return "Fizz";
         }
-        if (order % 5 == 0) {
+        if (IsMultipleFive(order)) {
             return "Buzz";
         }
         return "" + order;
+    }
+
+    private static boolean IsMultipleThreeAndFive(int order) {
+        return order % 3 == 0 && order % 5 == 0;
+    }
+
+    private static boolean IsMultipleThree(int order) {
+        return order % 3 == 0;
+    }
+
+    private static boolean IsMultipleFive(int order) {
+        return order % 5 == 0;
     }
 }
