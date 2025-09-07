@@ -6,6 +6,9 @@ public class MarsRover {
     public static final String North = "N";
     public static final String South = "S";
     public static final String W = "W";
+    public static final String MOVE = "M";
+    public static final String LEFT = "L";
+    public static final String RIGHT = "R";
 
     public Location arc(int x, int y, String direction, String command) {
         Location latestLocation = new Location(x, y, direction);
@@ -14,13 +17,13 @@ public class MarsRover {
 
     private static Location judgeCommand(int x, int y, String direction, String command, Location latestLocation) {
         switch (command) {
-            case "M":
+            case MOVE:
                 latestLocation = commandM(x, y, direction, latestLocation);
                 break;
-            case "L":
+            case LEFT:
                 latestLocation = commandL(x, y, direction, latestLocation);
                 break;
-            case "R":
+            case RIGHT:
                 latestLocation = commandR(x, y, direction, latestLocation);
                 break;
         }
