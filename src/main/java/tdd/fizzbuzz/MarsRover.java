@@ -11,10 +11,18 @@ public class MarsRover {
     public static final String RIGHT = "R";
     public static final String BEHIND = "B";
 
-    public Location arc(int x, int y, String direction, String command) {
+    public Location arc(int x, int y, String direction, String commands) {
         Location latestLocation = new Location(x, y, direction);
-        return judgeCommand(x, y, direction, command, latestLocation);
-    }
+        for (char cmd : commands.toCharArray()) {
+            latestLocation = judgeCommand(
+                    latestLocation.getX(),
+                    latestLocation.getY(),
+                    latestLocation.getDirection(),
+                    String.valueOf(cmd),
+                    latestLocation
+            );
+        }
+        return latestLocation;}
 
     private static Location judgeCommand(int x, int y, String direction, String command, Location latestLocation) {
         switch (command) {

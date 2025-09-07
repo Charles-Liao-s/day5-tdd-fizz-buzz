@@ -242,4 +242,18 @@ public class MarsRoverTest {
         assert dir.getY() == 0;
         assert dir.getDirection().equals("E");
     }
+    @Test
+    public void should_return_final_location_when_input_multiple_commands() {
+        int x = 0;
+        int y = 0;
+        String direction = "N";
+        String commands = "MLRMB";
+
+        MarsRover marsRover = new MarsRover();
+        Location dir = marsRover.arc(x, y, direction, commands);
+        assert dir.getX() == 0;
+        assert dir.getY() == 1;
+        assert dir.getDirection().equals("S");
+    }
+
 }
